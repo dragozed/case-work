@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Case Work</title>
+  </head>
+  <body onload="initialize()">
+    <div class="page">
+      <header class="header">
+        <img src="img/vatancomputer.jpg" alt="vatancomputer" />
+        <div class="categories">
+          <button class="categories-btn">
+            <i class="fa fa-bars"></i> Kategoriler
+          </button>
+          <div class="categories-content">
+            <div class="categories-head">
+              <a href="#">FIRSAT</a>
+              <a href="#">WEB'E ÖZEL</a>
+              <a href="#">YENİ</a>
+            </div>
+            <a href="#"
+              ><i
+                class="fa fa-mobile fa-fw"
+                style="font-size: 28px; color: #0252a6"
+              ></i>
+              Telefon
+              <i
+                class="fa fa-angle-right fa-fw"
+                style="font-size: 28px; color: #bdbdbd; float: right"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa fa-tv fa-fw"
+                style="font-size: 22px; color: #0252a6"
+              ></i
+              >Bilgisayar<i
+                class="fa fa-angle-right fa-fw"
+                style="font-size: 28px; color: #bdbdbd; float: right"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <input class="search" type="text" placeholder="&#xF002; Ürün Ara" />
+        <div class="account">
+          Üyelik
+          <i class="fa fa-user-circle fa-fw" style="font-size: 32px"></i>
+        </div>
+        <div class="cart">
+          Sepetim
+          <i class="fa fa-shopping-cart" style="font-size: 32px">
+            <div id="cart-count">0</div></i
+          >
+        </div>
+      </header>
+      <div class="content">
+        <div class="slider">
+          <div class="swiper" id="my-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="w-512">
+                <img src="img/512x512.png" alt="512x512" />
+              </div>
+              <div class="swiper-slide" id="w-256">
+                <img src="img/256x512.png" alt="256x512" />
+              </div>
+              <div class="swiper-slide" id="w-256">
+                <img src="img/256x512.png" alt="256x512" />
+              </div>
+              <div class="swiper-slide" id="w-256">
+                <img src="img/256x512.png" alt="256x512" />
+              </div>
+              <div class="swiper-slide" id="w-256">
+                <img src="img/256x512.png" alt="256x512" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-nav">
+              <div class="swiper-nav-left">
+                <i
+                  class="fa fa-angle-left fa-fw"
+                  style="font-size: 28px; color: #ffffff"
+                ></i>
+              </div>
+              <div class="swiper-nav-right">
+                <i
+                  class="fa fa-angle-right fa-fw"
+                  style="font-size: 28px; color: #ffffff"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget1">
+          <div class="widget1-head">
+            <div class="head-left">Öne çıkan ürünler</div>
+            <div class="head-right">
+              TÜM ÖNE ÇIKANLAR
+              <i class="fa fa-arrow-right" style="font-size: 16px"></i>
+            </div>
+          </div>
+          <div class="widget1-content"></div>
+        </div>
+        <div class="widget2">
+          <div class="widget2-head">
+            <div class="head-left">Çok satanlar</div>
+            <div class="head-right">
+              TÜM ÇOK SATANLAR
+              <i class="fa fa-arrow-right" style="font-size: 16px"></i>
+            </div>
+          </div>
+          <div class="widget2-content">
+            <div class="swiper" id="widget2-swiper">
+              <div class="swiper-wrapper"></div>
+
+              <div class="swiper-nav">
+                <div class="widget2-swiper-nav-left">
+                  <i
+                    class="fa fa-angle-left fa-fw"
+                    style="font-size: 28px; color: #555555"
+                  ></i>
+                </div>
+                <div class="widget2-swiper-nav-right">
+                  <i
+                    class="fa fa-angle-right fa-fw"
+                    style="font-size: 28px; color: #555555"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-top">
+            <div class="col">
+              <div class="head">KURUMSAL</div>
+              <div class="text">Hakkımızda</div>
+              <div class="text">Müşteri Hizmetleri</div>
+              <div class="text">Sipariş Aşamaları</div>
+              <div class="text">Sıkça Sorulan Sorular</div>
+              <div class="text">İnsan Kaynakları</div>
+              <div class="text">Gizlilik Politikamız</div>
+            </div>
+            <div class="col">
+              <div class="head"></div>
+              <div class="text">İletişim</div>
+              <div class="text">Vatan Card</div>
+              <div class="text">Servis Takip Formu</div>
+              <div class="text">Mağazalar</div>
+              <div class="text">İşlem Rehberi</div>
+            </div>
+            <div class="col">
+              <div class="head">KATEGORİLER</div>
+              <div class="text">Bilgisayar</div>
+              <div class="text">Cep Telefonu</div>
+              <div class="text">Tablet PC</div>
+              <div class="text">Akıllı Saat</div>
+              <div class="text">Vestel TV</div>
+              <div class="text">Oyun Bilgisayarı</div>
+            </div>
+            <div class="col">
+              <div class="head"></div>
+              <div class="text">Küçük Ev Aletleri</div>
+              <div class="text">Kişisel Bakım Ürünleri</div>
+              <div class="text">Elektrikli Süpürge</div>
+              <div class="text">Ütü</div>
+              <div class="text">Masaüstü Bilgisayar</div>
+              <div class="text">Sabit Diskler</div>
+            </div>
+            <div class="col">
+              <div class="head">ÖZEL ÜRÜNLER</div>
+              <div class="text">iPhone 7</div>
+              <div class="text">iPhone 6S</div>
+              <div class="text">iPhone 5S</div>
+              <div class="text">iPhone SE</div>
+              <div class="text">General Mobile 5 Plus</div>
+              <div class="text">Galaxy S7</div>
+              <div class="text">Note 5</div>
+              <div class="text">Galaxy S6</div>
+            </div>
+          </div>
+          <div class="border"></div>
+          <div class="footer-bottom">
+            <div class="col">
+              <div class="head">Türkiye'nin teknoloji hiperstoru</div>
+              <div class="text">
+                Copyright 2016 Vatan Bilgisayar San. ve Tic. A.Ş.
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <img src="./img/112x56.png" alt="112x56" />
+              </div>
+              <div class="card">
+                <img src="./img/112x56.png" alt="112x56" />
+              </div>
+              <div class="card">
+                <img src="./img/112x56.png" alt="112x56" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
